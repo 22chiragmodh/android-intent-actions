@@ -1,4 +1,4 @@
-# IntentApp Demo
+# IntentApp Demo App
 
 A tiny Android app that opens / controls third-party apps (Spotify, YouTube
 Music, Instagram, YouTube) using **Intents** and **deep links**. It's the
