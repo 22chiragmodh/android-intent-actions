@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/status_idle"
+            android:textColor="#3949AB" />
+
+        <!-- ================= Spotify ================= -->
+        <TextView style="@style/SectionHeader" android:text="Spotify" />
+
+        <Button
+            android:id="@+id/btnOpenSpotify"
+            style="@style/ActionButton"
+            android:text="Open Spotify" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSpotifyPlay"
+                style="@style/ActionButton"
+                android:layout_weight="1"
+                android:text="▶ Play" />
+
+            <Button
+                android:id="@+id/btnSpotifyPause"
+                style="@style/ActionButton"
+                android:layout_weight="1"
+                android:text="⏸ Pause" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSpotifyPrev"
+                style="@style/ActionButton"
+                android:layout_weight="1"
+                android:text="⏮ Prev" />
+
+            <Button
+                android:id="@+id/btnSpotifyNext"
+                style="@style/ActionButton"
+                android:layout_weight="1"
+                android:text="⏭ Next" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/inputSpotifyUri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="spotify:track:4cOdK2wGLETKBW3PvgPWqT"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:text="spotify:track:4cOdK2wGLETKBW3PvgPWqT" />
+
+        <Button
+            android:id="@+id/btnSpotifyOpenUri"
+            style="@style/ActionButton"
+            android:text="Open this in Spotify" />
+
+        <!-- ================= YouTube Music ================= -->
+        <TextView style="@style/SectionHeader" android:text="YouTube Music" />
+
+        <Button
+            android:id="@+id/btnOpenYtMusic"
+            style="@style/ActionButton"
+            android:text="Open YT Music" />
+
+        <!-- ================= Instagram ================= -->
+        <TextView style="@style/SectionHeader" android:text="Instagram" />
+
+        <Button
+            android:id="@+id/btnOpenInstagram"
+            style="@style/ActionButton"
+            android:text="Open Instagram" />
+
+        <Button
+            android:id="@+id/btnInstagramInbox"
+            style="@style/ActionButton"
+            android:text="Open DM inbox" />
+
+        <EditText
+            android:id="@+id/inputInstagramUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="instagram username"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnInstagramChat"
+            style="@style/ActionButton"
+            android:text="Open chat with user" />
+
+        <!-- ================= YouTube ================= -->
+        <TextView style="@style/SectionHeader" android:text="YouTube" />
+
+        <Button
+            android:id="@+id/btnOpenYoutube"
+            style="@style/ActionButton"
+            android:text="Open YouTube" />
+
+    </LinearLayout>
+</ScrollView>

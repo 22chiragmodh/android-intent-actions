@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IntentApp Demo</string>
+    <string name="status_idle">Tap a button — the status shows here.</string>
+</resources>
